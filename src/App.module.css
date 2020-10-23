@@ -3,17 +3,22 @@
     flex-direction: column;
     position: relative;
     height: 100%;
+    min-width: 1050px;
 }
 
 .header {
     display: flex;
+    position: absolute;
+    top: 0;
+    width: 100%;
     height: 50px;
     background: rgb(5, 30, 52);
     justify-content: flex-end;
     align-items: center;
+
 }
 
-.header button{
+.header button {
     background-color: #00b8ff;
     border: none;
     color: white;
@@ -24,6 +29,6 @@
     outline: none;
 }
 
-.header button:hover{
+.header button:hover {
     background-color: #00eaff;
 }
