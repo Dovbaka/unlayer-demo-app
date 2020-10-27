@@ -54,13 +54,13 @@ export default class extends Component {
 
         // eslint-disable-next-line
         this.editor = unlayer.createEditor({
-            ...options,
             id: this.editorId,
-            displayMode: 'web',
+            displayMode: 'email',
             source: {
                 name: pkg.name,
                 version: pkg.version,
             },
+            ...options
         });
 
         // All properties starting with on[Name] are registered as event listeners.
