@@ -1,3 +1,5 @@
+//This file is used to load Unlayer script so it could be edited
+
 const scriptUrl = '//editor.unlayer.com/embed.js?1';
 const callbacks = [];
 let loaded = false;
@@ -31,7 +33,6 @@ const runCallbacks = () => {
 
 export const loadScript = (callback) => {
     addCallback(callback);
-
     if (!isScriptInjected()) {
         const embedScript = document.createElement('script');
         embedScript.setAttribute('src', scriptUrl);

@@ -2,6 +2,8 @@ import React, {Component} from 'react';
 import {loadScript} from './loadScript';
 import pkg from '../../../package.json';
 
+//This file is used to load Unlayer script so it could be edited
+
 let lastEditorId = 0;
 
 export default class extends Component {
@@ -52,8 +54,7 @@ export default class extends Component {
             options.locale = this.props.locale;
         }
 
-        // eslint-disable-next-line
-        this.editor = unlayer.createEditor({
+        this.editor = window.unlayer.createEditor({
             id: this.editorId,
             displayMode: 'email',
             source: {

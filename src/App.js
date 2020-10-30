@@ -1,6 +1,6 @@
 import React from 'react';
-import Editor from "./components/Editor/Editor";
 import { BrowserRouter , Switch, Route } from 'react-router-dom';
+import Editor from "./components/Editor/Editor";
 import Consumer from "./components/Consumer/Consumer";
 import styles from "./App.module.css"
 
