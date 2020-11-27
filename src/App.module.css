@@ -1,3 +1,7 @@
 .app_wrapper {
     height: 100%;
 }
+
+.htmlWrapper {
+    padding: 20px;
+}

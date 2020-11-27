@@ -1,6 +1,7 @@
 import React, {useState} from "react";
+import styles from "../../App.module.css"
 
-const Consumer = (props) => {
+const HtmlCode  = () => {
 
     const [html] = useState(
         ()=>{
@@ -9,10 +10,9 @@ const Consumer = (props) => {
         }
     );
 
-    return (
-        <div dangerouslySetInnerHTML={{__html: html}}/>
-    );
+    return <div className={styles.htmlWrapper}>
+        {html}
+    </div>
 }
 
-export default Consumer;
-
+export default HtmlCode;
